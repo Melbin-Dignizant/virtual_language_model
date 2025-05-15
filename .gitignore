@@ -1,6 +1,11 @@
+#Folders
 venv
 Bokenäs förskola
+llava-v1.6-mistral-7b-hf
+
+#files
 *.zip
 *.pdf
 *.png
 *.jpg
+*.pyc
