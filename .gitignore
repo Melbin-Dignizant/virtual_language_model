@@ -9,3 +9,4 @@ llava-v1.6-mistral-7b-hf
 *.png
 *.jpg
 *.pyc
+*.gguf
