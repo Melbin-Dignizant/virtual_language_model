@@ -4,7 +4,7 @@ from PIL import Image
 import requests
 
 # Path to your locally downloaded model
-local_model_path = r"D:\Melbin\VLM-Examples\llava-v1.6-mistral-7b-hf"  # Replace with your actual local path
+local_model_path = r"D:\Melbin\VLM-Examples\llava_model\llava-v1.6-mistral-7b-hf"  # Replace with your actual local path
 
 # Load model and processor from local path
 processor = LlavaNextProcessor.from_pretrained(local_model_path)
@@ -16,7 +16,7 @@ model = LlavaNextForConditionalGeneration.from_pretrained(
 model.to("cuda:0")
 
 # Prepare image and text prompt
-img = r"D:\Melbin\VLM-Examples\static\ex01.png"
+img = r"D:\Melbin\VLM-Examples\static\ex02.png"
 image = Image.open(img)
 
 # Define chat history and format with template
@@ -24,7 +24,7 @@ conversation = [
     {
       "role": "user",
       "content": [
-          {"type": "text", "text": "wha"},
+          {"type": "text", "text": "what is the area of room 207?"},
           {"type": "image"},
         ],
     },

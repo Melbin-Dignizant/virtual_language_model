@@ -5,7 +5,7 @@ import os
 import argparse
 
 # === Configuration: set your model path and default instruction here ===
-DEFAULT_MODEL_PATH = r"D:\Melbin\VLM-Examples\llava-v1.6-mistral-7b-hf"
+DEFAULT_MODEL_PATH = r"D:\Melbin\VLM-Examples\llava_model\llava-v1.6-mistral-7b-hf"
 DEFAULT_INSTRUCTION = (
     "You are an expert at analyzing images. "
     "Provide detailed, accurate answers about the given image."
